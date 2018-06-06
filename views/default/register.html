@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTER</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{=URL('static','css/bootstrap.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{=URL('static','css/style.css')}}">
+<h1>AZIN UNIVERSITY</h1>
+</head>
+<body>
+	
+	<div class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar-content">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#"><img src="{{=URL('static','images/AZIN.jpg')}}" weight="40px" height="40px"></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="mynavbar-content">
+	      <ul class="nav navbar-nav"> 
+	        <li class="active"><a href="#">HOME</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">ACADEMICS<b class="caret"></b></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#">Undergraduate</a></li>
+	              <li><a href="#">School of Graduate Studies</a></li>
+	              <li><a href="#">Academic Calendar</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">Investors</a></li>
+	              <li><a href="#">Share holders</a></li>
+	            </ul>
+	        </li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">ADMISSIONS<b class="caret"></b></a>
+	          	<ul class="dropdown-menu">
+	          	  <li><a href="#">How to Apply</a></li>
+	          	  <li><a href="#">Undergraduate Admissions</a></li>
+	          	  <li><a href="#">Graduate Admissions</a></li>
+	          	</ul>
+	        </li>
+	        <li><a href="#">Pricing</a></li>
+	        <li><a href="#">Contact</a></li>
+	        <li><a href="#">Feedback</a></li>
+	      </ul>
+	    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 form-div">
+				<form action="{{=URL('store')}}" method="post">
+				  <div class="form-group">
+				    <label for="Firstname">Firstname</label>
+				    <input type="text" class="form-control" id="Firstame" placeholder="Firstname">
+				  </div>
+				  <div class="form-group">
+				    <label for="Lastname">Lastname</label>
+				    <input type="text" class="form-control" id="Lastname" placeholder="Lastname">
+				  </div>
+				  <div>
+				  	<label for="Gender">Gender</label>
+				  </div>
+				  <div>
+				    <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">MALE
+                    </label>
+                    <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">FEMALE
+                    </label>
+                  </div>
+				  <div class="form-group">
+				  	<label for="Idnumber">Id number</label>
+				  	<input type="int" class="form-control" id="Idnumber" placeholder="Idnumber">
+				  </div>		
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>	
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+	<script src="{{=URL('static','js/jquery.js')}}"></script>	
+	<script src="{{=URL('static','js/bootstrap.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.form-div {
+	margin-top: 75px;
+	border: 1px solid #333;
+	padding: 40px;
+}
+
+.navbar-brand > img {
+    display: block;
+    padding-bottom: 11px;
